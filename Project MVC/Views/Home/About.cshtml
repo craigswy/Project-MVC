@@ -1,0 +1,227 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+@*<main aria-labelledby="title">
+        <h2 id="title">@ViewBag.Title.</h2>
+        <h3>@ViewBag.Message</h3>
+
+        <p>Use this area to provide additional information.</p>
+    </main>*@
+
+<style>
+    html, body {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-family: 'Noto Sans TC', sans-serif;
+        padding: 0px;
+        margin: 0px;
+        color: #333333;
+        background: #f6f7f8
+    }
+    /*header*/
+    header {
+        height: 60px;
+        color: #666666;
+        box-shadow: 0 4px 12px 0 rgba(0,0,0,0.08);
+    }
+
+    nav {
+        max-width: 700px;
+        margin: 10px auto;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-title {
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .nav-link {
+        color: #666666
+    }
+
+    main {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 24px 0 8px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 0 0 8px;
+        font-weight: 600;
+    }
+    /*personal info*/
+    section {
+        margin-bottom: 48px;
+    }
+
+    p {
+        color: #666666;
+    }
+
+    .photo {
+        text-align: center;
+    }
+
+    .photo-img {
+        max-width: 30%;
+        max-height: 30%;
+        border-radius: 50%;
+    }
+
+    .name {
+        text-align: center;
+        text-decoration: none;
+        font-size: 32px;
+        margin: 20px 0;
+        text-decoration: none;
+    }
+
+    .social-media {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-media-link {
+        color: #999999;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+        .social-media-link:hover {
+            color: #ff6600;
+        }
+
+    .title {
+        text-align: center;
+        color: #ff6600;
+        font-size: bold;
+    }
+    /*skill*/
+    .skills {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skill {
+        width: 30%;
+    }
+
+    .skill-name {
+        border-top: 2px solid #999999;
+        padding-top: 10px;
+    }
+    /*experience*/
+    hr {
+        border: 0px;
+        height: 1px;
+        background: #cccccc;
+        margin: 20px 0;
+    }
+
+    .company, .duration {
+        color: #666666;
+        margin-right: 20px;
+    }
+
+    .fa-building, .fa-calendar-alt {
+        margin-right: 5px;
+    }
+
+</style>
+
+<header>
+    <nav>
+        <span class="nav-title">
+            Craig Yang
+        </span>
+        <a href="#" class="nav-link">
+            <i><i class="fas fa-print fa-lg"></i></i>
+    </nav>
+</header>
+<main>
+    <section class="personal-info">
+        <div class="photo">
+            <img class="photo-img" src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.18169-9/14517413_10205587390203910_1519592365612031150_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7a1959&_nc_ohc=clbOCTHDgbIAX-aSAuH&_nc_ht=scontent.ftpe7-3.fna&oh=00_AfCjLZBHL7XczA20OUg7cuXGtUNBg8Ykmln6Ruoe8dfm8A&oe=657533DB" alt="">
+        </div>
+        <h1 class="name">Craig Yang</h1>
+        <div class="social-media">
+            <a class="social-media-link" href="https://www.facebook.com/craig.yang.7/" target="_blank">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a class="social-media-link" href="https://www.instagram.com/craigswy/?hl=zh-tw" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a class="social-media-link" href="https://line.me/ti/p/KoGDxLBjzk" target="_blank">
+                <i class="fab fa-line fa-lg"></i>
+            </a>
+            <a class="social-media-link" href="mailto:gene0405@gmail.com" target="_blank">
+                <i class="fas fa-envelope-open-text fa-lg"></i>
+            </a>
+        </div>
+        <div class="title">
+            | 混日子旅行家 | 無人島小島主 |
+        </div>
+        <p class="description">
+            大家好！我是在廣大世界的其中一島嶼-鬼島的島主，時常也前往其它島嶼混日子，欣賞各地方的文化和風景。期盼在彌留的期間，可以走向科技世界，學好這個尖端科技的語言，與2020的世界接軌，讓大家知道無人島的存在。歡迎留下您的足跡和意見交流。
+        <p />
+    </section>
+    <h2>專業技能</h2>
+    <section class="skills">
+        <div class="skill">
+            <h3 class="skill-name">島嶼建築規劃</h3>
+            <p class="skill-description">
+                為了讓島嶼上和平相處，規劃出公平且舒適的公共空間是必要的課題。能夠依據島上的地理條件製造出符合島民需求的居住條件，並且掌控島上的產業製造和資源分配。
+            </p>
+        </div>
+        <div class="skill">
+            <h3 class="skill-name">專業咖啡沖泡</h3>
+            <p class="skill-description">
+                島民來到島上，生活物資不及現今社會，有抱怨是難免的！來一杯島上特有的咖啡是在無人島上感情的催化劑。而這個很有年紀的咖啡技術，需要從烘豆開始著手，再來是沖泡和咖啡與牛奶的交融。是在島上令人讚不絕口的必需品。
+            </p>
+        </div>
+        <div class="skill">
+            <h3 class="skill-name">飛行旅遊規劃</h3>
+            <p class="skill-description">
+                世界很大，景點很多。多多旅遊是對身心皆健康的活動，但是要好好規劃是個艱難的課題。曾經規劃過全島的旅遊，現在再無人島上要自己製造景點，讓飛行至此的旅客可以享受賓至如歸和體驗到最在地的人文體會。
+            </p>
+        </div>
+    </section>
+    <section class="experience">
+        <h2 class="job-experience">工作經歷</h2>
+        <div class="experience-item">
+            <h3 class="job-title">無人島旅遊策劃</h3>
+            <span class="company"><i><i class="far fa-building"></i><i>鬼島島旅遊專業會社</span>
+            <span class="duration">
+                <i class="fas fa-calendar-alt">2015年1月 - 2019年8月</i><i>
+                    <span>
+                        <p class="experience-description">無人島旅遊規劃、資源預算規劃、旅遊人數數字管理、特產水果栽種、網頁行銷、徵收島民/旅客。</p>
+        </div>
+        <hr>
+        <div class="experience-item">
+            <h3 class="job-title">咖啡師專業</h3>
+            <span class="company"><i><i class="far fa-building"></i><i>黃銅咖啡館</span>
+            <span class="duration">
+                <i class="fas fa-calendar-alt">2011年6月 - 2014年12月</i><i>
+                    <span>
+                        <p class="experience-description">咖啡豆烘培、特殊風味調味、牛奶採購、咖啡研磨、咖啡沖泡。</p>
+        </div>
+        <hr>
+        <div class="experience-item">
+            <h3 class="job-title">無人島導覽員</h3>
+            <span class="company"><i><i class="far fa-building"></i><i>自由業專業領隊團</span>
+            <span class="duration"><i class="fas fa-calendar-alt">2010年1月 - 2011年5月</i><i></span>
+            <p class="experience-description">帶領新人進入無人島、資源介紹、人物介紹、場域介紹、島民觀察、島旗製作、島歌編曲、心理諮商。</p>
+        </div>
+    </section>
+
+</main>
